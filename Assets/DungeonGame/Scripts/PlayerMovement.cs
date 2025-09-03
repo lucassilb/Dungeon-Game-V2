@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private float moveH, moveV;
     public Animator animator;
+    public float speed = 2f;
 
     private void Start()
     {
@@ -15,11 +16,20 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            transform.position = new Vector3(0,0,0);
+        }
+    }
 
     private void FixedUpdate()
     {
-              
 
+        moveH = Input.GetAxis("Horizontal") * speed;
+        moveV = Input.GetAxis("Vertical") * speed;
+
+        rb.linearVelocity = new Vector2 (moveH, moveV);
 
         // Responsável por ativar as animações
         animator.SetFloat("Horizontal", moveH);

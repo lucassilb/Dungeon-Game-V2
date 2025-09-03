@@ -3480,6 +3480,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2149580471076397868, guid: c05eea1f40f660a40aa29402f93e1246, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1769842718}
+    - targetCorrespondingSourceObject: {fileID: 2149580471076397868, guid: c05eea1f40f660a40aa29402f93e1246, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1769842722}
   m_SourcePrefab: {fileID: 100100000, guid: c05eea1f40f660a40aa29402f93e1246, type: 3}
 --- !u!1 &857836166
 GameObject:
@@ -6206,6 +6209,23 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1.3333334}
   m_EdgeRadius: 0
+--- !u!114 &1769842722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769842716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab1c877b709f00541b96ee12fcd9f435, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nome: camisa 12
+  vida: 5
+  speed: 3
+  maxVida: 5
+  target: {fileID: 1390919504}
 --- !u!1 &1817306796
 GameObject:
   m_ObjectHideFlags: 0
