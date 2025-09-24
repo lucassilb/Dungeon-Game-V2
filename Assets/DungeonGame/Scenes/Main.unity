@@ -5606,6 +5606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1185114115}
   - component: {fileID: 1185114116}
+  - component: {fileID: 1185114117}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -5642,6 +5643,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 0
   pointsText: {fileID: 1143090399}
+--- !u!320 &1185114117
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185114114}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: f62759f23dc391640a42859ac60f598c, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -237639176453912094, guid: f62759f23dc391640a42859ac60f598c, type: 2}
+    value: {fileID: 1990646164}
+  - key: {fileID: -7347794430318959274, guid: f62759f23dc391640a42859ac60f598c, type: 2}
+    value: {fileID: 1990646164}
+  m_ExposedReferences:
+    m_References:
+    - c81a91fb1facb5645ac554076e3cdbe8: {fileID: 1990646163}
 --- !u!1 &1192749744
 GameObject:
   m_ObjectHideFlags: 0
@@ -6204,7 +6227,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1510062984
 Transform:
   m_ObjectHideFlags: 0
@@ -6808,6 +6831,16 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: c9987513481982b4da5422edf0acd5c0, type: 3}
   m_PrefabInstance: {fileID: 1464709364}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1990646163 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2194752647164877640, guid: 3306d825df98ffb42a499541057d2a92, type: 3}
+  m_PrefabInstance: {fileID: 5153342896116287561}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1990646164 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2276709499960045714, guid: 3306d825df98ffb42a499541057d2a92, type: 3}
+  m_PrefabInstance: {fileID: 5153342896116287561}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1995804629 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: c9987513481982b4da5422edf0acd5c0, type: 3}
@@ -7022,7 +7055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7290550883426150538, guid: 3306d825df98ffb42a499541057d2a92, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.01
+      value: -4.51
       objectReference: {fileID: 0}
     - target: {fileID: 7290550883426150538, guid: 3306d825df98ffb42a499541057d2a92, type: 3}
       propertyPath: m_LocalPosition.z
