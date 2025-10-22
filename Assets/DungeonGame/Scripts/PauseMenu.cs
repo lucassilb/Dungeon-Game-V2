@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu: MonoBehaviour
 {
     public GameObject pausePanel; // arraste o painel aqui
+    public GameObject hud;
     private bool isPaused = false;
 
     void Update()
@@ -20,6 +21,7 @@ public class PauseMenu: MonoBehaviour
     public void Pause()
     {
         pausePanel.SetActive(true);
+        hud.SetActive(false);
         Time.timeScale = 0f;  // congela o jogo
         isPaused = true;
     }
@@ -29,6 +31,7 @@ public class PauseMenu: MonoBehaviour
         pausePanel.SetActive(false);
         Time.timeScale = 1f;  // volta ao normal
         isPaused = false;
+        hud.SetActive(true);
     }
 
     public void QuitToMenu()
